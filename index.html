@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <h1 id="main-title">WASTE SOME TIME</h1>
+
+    <div id="main-1-row">
+        <div id="main-1" class="game" onclick="turnongame1()"><img src="Game1-img.PNG" alt=""></div>
+        <div id="main-2" class="game" onclick="open_game2()"><img src="game2-img.PNG" alt=""></div>
+        <div id="main-3" class="game" onclick="opengame3()"><img src="game3-img.PNG" alt=""></div>
+    </div>
+
+    <div id="main-2-row">
+        <div id="main-4" class="game" onclick="open_game4()"><img src="game4-img.PNG" alt=""></div>
+        <div id="main-5" class="game" onclick="turnongame5()"><img src="Game5-img.PNG" alt=""></div>
+        <div id="main-6" class="game" onclick="open6()"><img src="Game6-img.PNG" alt=""></div>
+    </div>
+
+    <div id="main-3-row">
+        <div id="main-7" class="game" onclick="opengame7()"></div>
+        <div id="main-8" class="game" onclick="turnon8()"><img src="game8-img.PNG" alt=""></div>
+        <div id="main-9" class="game" onclick="turnon9()"><img src="game9-img.PNG"></div>
+    </div>
+
+    <!--game 1-->
+ 
+    <div id="body1">
+        <div id="main-top">
+            <div id="flexer">
+                <h1>ROCK</h1>
+                <h1>PAPER</h1>
+                <h1>SCISSORS</h1>
+            </div>
+            <div id="score">
+                <p>Score</p>
+                <h1 id="scores">0</h1>
+            </div>
+        </div>
+    
+    
+        <div id="paper-scissors">
+            <div id="paper" onclick="paper()"><p>✋</p></div>
+            <div id="scissors" onclick="scissors()"><p>✌️</p></div>
+        </div>
+        <div id="rock" onclick="rock()"><p>✊</p></div>
+        <button id="goback-game-1" onclick="turnoffgame1()">GO BACK</button>
+    <div id="end">
+            <h1 id="answ">YOU WON</h1>
+        <div id="flexer-2">
+            <div>
+                <p id="p1">You picked</p>
+                <h1><p id="you_pick">ROCK</p></h1>
+            </div>
+            <div>
+                <p id="p3">the computer picked</p>
+                <h1><p id="comp_pick">ROCK</p></h1>
+            </div>
+        </div>
+            <button id="Restart" onclick="restart()">Replay</button>
+            
+        </div>
+    
+    
+    </div>
+
+
+    <!--game 2-->
+
+    <div id="game2">
+        <h1>BANANA CLICKER</h1>
+        <img src="banana.png" onclick="plusone()" id="banana-img">
+        <div id="upgrades">
+            <div id="up-one" onclick="ability1()">
+                <h4>x2 bananas</h4>
+                <h5 id="show-cost-ability-1">cost: 5 Bananas</h4>
+            </div>
+            <div id="up-two" onclick="ability2()">
+                <h4>+1 every sec</h4>
+                <h5 id="usefull">COST: 10 BANANAS</h5>
+            </div>
+            <div id="up-three" onclick="ability3()">
+                <h4>ORANGE</h4>
+                <h5 id="usefull2">COST: 10000 BANANAS</h5>
+            </div>
+        </div>
+        <div id="score2">
+            <h2>SCORE :</h2>
+            <p id="score_2">0</p>
+        </div>
+        <button onclick="close_game2()">GO BACK</button>
+    </div>
+
+
+    <!--game 3-->
+
+
+    <div id="game3">
+            <h1>PRESS THE BUTTON</h1>
+            <div id="row1">
+                <div class="redbutton" id="redbtn1" onclick="get_point_one()"></div>
+                <div class="redbutton" id="redbtn2" onclick="get_point_two()"></div>
+            </div>
+            <div id="row2">
+                <div class="redbutton" id="redbtn3" onclick="get_point_three()"></div>
+                <div class="redbutton" id="redbtn4" onclick="get_point_four()"></div>
+                <div class="redbutton" id="redbtn5" onclick="get_point_five()"></div>
+            </div>
+            <div id="score3">
+                <h2>SCORE : </h2>
+                <p id="score4">0</p>
+            </div>
+            <button id="leave-game3" onclick="leavegame3()">GO BACK</button>
+    </div>
+
+
+    <!--game 4-->
+
+    <div id="game4">
+        <h1>RANDOM QUESTIONS</h1>
+        <h2 id="thequestion">0. Click any box to start</h2>
+        <div id="answers-row-1">
+            <div class="ans" onclick="a_ans_1() ,shownewquestion()"><p id="an1">START</p></div>
+            <div class="ans" onclick="a_ans_2() ,shownewquestion()"><p id="an2">START</p></div>
+        </div>
+        <div id="answers-row-2">
+            <div class="ans" onclick="a_ans_3() ,shownewquestion()"><p id="an3">START</p></div>
+            <div class="ans" onclick="a_ans_4() ,shownewquestion()"><p id="an4">START</p></div>
+        </div>
+        <div id="results">
+            <div id="false">0</div>
+            <div id="correct">0</div>
+        </div>
+
+        <button id="goback-game-4" onclick="close_game4()">GO BACK</button>
+    </div>
+
+
+    <!--game 3-->
+
+    <div id="game5">
+        <div id="row1-game5">
+            <div id="block-1" onclick="X()"></div>
+            <div id="block-2" onclick="X()"></div>
+            <div id="block-3" onclick="X()"></div>
+        </div>
+        <div id="row1-game5">
+            <div id="block-4" onclick="X()"></div>
+            <div id="block-5" onclick="X()"></div>
+            <div id="block-6" onclick="X()"></div>
+        </div>
+        <div id="row1-game5">
+            <div id="block-7" onclick="X()"></div>
+            <div id="block-8" onclick="X()"></div>
+            <div id="block-9" onclick="X()"></div>
+        </div>
+
+        <div id="Y-pos">
+            <div id="vertical" class="vert1"></div>
+            <div id="vertical" class="vert2"></div>
+        </div>
+
+        <div id="H-pos">
+            <div id="Horizontal1"></div>
+            <div id="Horizontal2"></div>
+        </div>
+
+        <div id="buttons">
+            <button id="goback-game-5" onclick="turnoffgame5()">GO BACK</button>
+            <button id="reset-btn" onclick="reset()">RESET</button>
+        </div>
+    </div>
+
+    <!--GAME 6 HTML-->
+
+    <div id="game6">
+        <div id="scorez">
+            <h4 id="scorezi">0/7</h4>
+        </div>
+        <div id="underword">
+            <div id="letter1" class="letters">
+                <h4 id="letter1-1">C</h4>
+                <p  id="letter1-2">_</p>
+            </div>
+            <div id="letter2" class="letters">
+                <h4 id="letter2-1">A</h4>
+                <p id="letter2-2">_</p>
+            </div>
+            <div id="letter3" class="letters">
+                <h4 id="letter3-1">R</h4>
+                <p id="letter3-2">_</p>
+            </div>
+            <div id="letter4" class="letters">
+                <h4 id="letter4-1">S</h4>
+                <p id="letter4-2">_</p>
+            </div>
+        </div>
+        <div id="buttons-row1">
+            <div id="a" class="butonz" onclick="opacity100()">A</div>
+            <div id="b" class="butonz" onclick="opacity100()">B</div>
+            <div id="c" class="butonz" onclick="opacity100()">C</div>
+            <div id="d" class="butonz" onclick="opacity100()">D</div>
+            <div id="e" class="butonz" onclick="opacity100()">E</div>
+            <div id="f" class="butonz" onclick="opacity100()">F</div>
+            <div id="g" class="butonz" onclick="opacity100()">G</div>
+            <div id="h" class="butonz" onclick="opacity100()">H</div>
+            <div id="i" class="butonz" onclick="opacity100()">I</div>
+            <div id="j" class="butonz" onclick="opacity100()">J</div>
+            <div id="k" class="butonz" onclick="opacity100()">K</div>
+            <div id="l" class="butonz" onclick="opacity100()">L</div>
+            <div id="m" class="butonz" onclick="opacity100()">M</div>
+        </div>
+        <div id="buttons-row2">
+            <div id="n" class="butonz" onclick="opacity100()">N</div>
+            <div id="o" class="butonz" onclick="opacity100()">O</div>
+            <div id="p" class="butonz" onclick="opacity100()">P</div>
+            <div id="q" class="butonz" onclick="opacity100()">Q</div>
+            <div id="r" class="butonz" onclick="opacity100()">R</div>
+            <div id="s" class="butonz" onclick="opacity100()">S</div>
+            <div id="t" class="butonz" onclick="opacity100()">T</div>
+            <div id="u" class="butonz" onclick="opacity100()">U</div>
+            <div id="v" class="butonz" onclick="opacity100()">V</div>
+            <div id="w" class="butonz" onclick="opacity100()">W</div>
+            <div id="x" class="butonz" onclick="opacity100()">X</div>
+            <div id="y" class="butonz" onclick="opacity100()">Y</div>
+            <div id="z" class="butonz" onclick="opacity100()">Z</div>
+        </div>
+
+        <button id="goback-6" onclick="close6()">GO BACK</button>
+        <button id="changeword" onclick="changeword()">CHANGE WORD</button>
+    </div>
+    
+
+    <!-- GAME 7 HTML -->
+
+    <div id="game7">
+        <div id="row1-d">
+            <div class="memory-slot"><p id="item1" class="op_0" onclick="make_black()"></p></div>
+            <div class="memory-slot"><p id="item2" class="op_0" onclick="make_black()"></p></div>
+            <div class="memory-slot"><p id="item3" class="op_0" onclick="make_black()"></p></div>
+            <div class="memory-slot"><p id="item4" class="op_0" onclick="make_black()"></p></div>
+        </div>
+        <div id="row1-d">
+            <div class="memory-slot"><p id="item5" class="op_0" onclick="make_black()"></p></div>
+            <div class="memory-slot"><p id="item6" class="op_0" onclick="make_black()"></p></div>
+            <div class="memory-slot"><p id="item7" class="op_0" onclick="make_black()"></p></div>
+            <div class="memory-slot"><p id="item8" class="op_0" onclick="make_black()"></p></div>
+        </div>
+        <div id="row1-d">
+            <div class="memory-slot"><p id="item9" class="op_0" onclick="make_black()"></p></div>
+            <div  class="memory-slot"><p id="item10" class="op_0" onclick="make_black()"></p></div>
+            <div  class="memory-slot"><p id="item11" class="op_0" onclick="make_black()"></p></div>
+            <div  class="memory-slot"><p id="item12" class="op_0" onclick="make_black()"></p></div>
+        </div>
+        <div id="row1-d">
+            <div class="memory-slot"><p id="item13" class="op_0" onclick="make_black()"></p></div>
+            <div class="memory-slot"><p id="item14" class="op_0" onclick="make_black()"></p></div>
+            <div class="memory-slot"><p id="item15" class="op_0" onclick="make_black()"></p></div>
+            <div class="memory-slot"><p id="item16" class="op_0" onclick="make_black()"></p></div>
+        </div>
+
+        <button id="replay-7">REPLAY</button>
+        <button id="goback-7" onclick="closegame7()">GO BACK</button>
+    </div>
+
+    <!-- GAME 8 HTML -->
+
+    <div id="game8" onclick="colorchangez()">
+        <div id="colorz1"></div>
+        <div id="colorz2"></div>
+
+
+
+
+
+        <button id="leave-game8" onclick="turnoff8()">GO BACK</button>
+        
+    </div>
+
+
+
+    <!-- GAME 9 HTML -->
+
+    <div id="game9">
+        <h1 id="game9-h1">FAST MATH</h1>
+        <h2 id ="akapela">32 + 12 = ?</h2>
+        <input type="text" placeholder="0" id="ans-num" onChange="makeGreen()">
+        <div id="timer">
+            <div id="timer-inner"></div>
+        </div>
+        <div id="score-game9"></div>
+        
+        
+        
+        <button id="leave-game9" onclick="turnoff9()">GO BACK</button>
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>

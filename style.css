@@ -1,0 +1,1359 @@
+@import url('https://fonts.cdnfonts.com/css/bloomer-demo');
+
+
+img{
+    width: 26vw;
+    position: relative;
+    top: 15%;
+    overflow: hidden;
+}
+
+body{
+    background: linear-gradient(110deg,#7b65d1,#7F00FF,#7F00FF,#5D3FD3);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bloomer DEMO', sans-serif;
+}
+
+#main-title{
+    color: white;
+    font-size: 58px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#main-title{
+    animation: pop-animation 2s forwards;
+}
+
+
+#main-1-row{
+    display: flex;
+    flex-direction: row;
+}
+
+#main-2-row{
+    display: flex;
+    flex-direction: row;
+}
+
+#main-3-row{
+    display: flex;
+    flex-direction: row;
+}
+
+#main-4-row{
+    display: flex;
+    flex-direction: row;
+}
+
+#main-5-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.game{
+    width: 26vw;
+    height: 18vw;
+    background-color: black;
+    margin: 2vw 2vw 2vw 2vw;
+    border-radius: 5px;
+    border: 2px solid white;
+    animation: games-pop-in 2s forwards;
+}
+
+.game:hover{
+    transform: scale(0.99);
+    cursor: pointer;
+}
+
+@keyframes pop-animation {
+    0%{transform: scale(1);}
+    100%{transform: scale(1.1);}
+}
+
+@keyframes games-pop-in {
+    0%{scale: 0.6;}
+    0%{opacity: 0.6;}
+    100%{opacity: 1;}
+    100%{scale: 1;}
+}
+
+ /* GAME 1 CSS STARTS HERE*/
+
+ #body1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aquamarine;
+    opacity: 0;
+    pointer-events: none;
+    width: 102vw;
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    top:0px;
+
+    padding-top: 3vh;
+    background: linear-gradient(80deg,#1b1f30,#223469 15%,#223469,#1d2233 99%);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    align-items: center;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+#main-top{
+    border: 3px solid white;
+    width: 65vw;
+    height: 16vh;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    bottom: 2.5%;
+}
+
+#flexer{
+    display: flex;
+    flex-direction: column;
+}
+
+#flexer h1{
+    color: white;
+    font-weight: bolder;
+    margin: 3.2% 0px 3.2% 25px;
+}
+
+#score{
+    position: absolute;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    right: 17.6vw;
+    top: 4.93%;
+    border-radius: 12px;
+    background-color: white;
+    width: 26%;
+    max-width: 180px;
+    height: 90%;
+    text-align: center;
+    right: 1.6%;
+}
+
+#score p{
+    font-size: 15px;
+    font-weight: bolder;
+    color: #284497;
+    margin: 15px 0px 0px 0px;
+}
+
+#score h1{
+    font-size: 78px;
+    margin: 0px;
+    color: #51535c;
+    font-weight: bolder;
+}
+
+#paper{
+    position: relative;
+    top: 200px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color:#e8e6e7;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;    
+    border: 20px solid #516df5;
+}
+
+#rock{
+    position: relative;
+    top: -20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color:#e8e6e7;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;    
+    border: 20px solid #d83350;
+    position: relative;
+    bottom: 152px;
+}
+
+
+
+#scissors,#paper,#rock{
+    margin: 50px;
+    font-size: 90px;
+}
+
+#scissors:hover,#paper:hover,#rock:hover{
+    background-color: #d1d1d1;
+    cursor: pointer;
+    transform: scale(1.015);
+}
+
+#scissors p,#paper p,#rock p{
+    position: relative;
+    bottom: 83px;
+    left: 30px;    
+}
+
+
+#scissors{
+    position: relative;
+    top: 200px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color:#e8e6e7;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;    
+    border: 20px solid #e6a41f;
+}
+
+#paper-scissors{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    position: relative;
+    bottom: 166px;
+}
+
+#end{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    height: 100%;
+    background: linear-gradient(80deg,#1b1f30,#223469 15%,#223469,#1d2233 99%);
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#end h1{
+    font-size: 130px;
+    color: white;
+}
+
+#Restart{
+    width: 400px;
+    font-size: 90px;
+    font-weight: bolder;
+    color: white;
+    height: 150px;
+    margin-top: 100px;
+    border-radius: 15px;
+    background-color: #223469;
+    border: 6px solid #1b1f30;
+}
+
+#Restart:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+    background-color: #263975;
+}
+
+#flexer-2{
+    display: flex;
+    flex-direction: row;
+}
+
+#flexer-2 h1{
+    font-size: 32px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: #1b1f30;
+    font-weight: bolder;
+    background-color:#e8e6e7;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;    
+    border: 20px solid #e6a41f;
+    margin: 50px 120px 0px 120px;
+}
+
+#p3{
+    font-size: 12px;
+    font-size: 22px;
+    color: white;
+    font-weight: bolder;
+    position: relative;
+    left: 110px;
+}
+
+#p1{
+    left: 100px;
+    font-size: 12px;
+    font-size: 22px;
+    color: white;
+    font-weight: bolder;
+    position: relative;
+    left: 155px;
+}
+
+#flexer-2 div h1 p{
+    position: relative;
+    top: -102px;
+    left: 24px;
+    font-size: 102px;
+}
+
+#comp_pick p{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+
+
+#goback-game-1{
+    width: 35vw;
+    height: 10vh;
+    border-radius: 15px;
+    border: 3px solid #1b1f30;
+    background-color:#263975;
+    font-size: 42px;
+    color: white;
+    font-weight: bolder;
+    position: relative;
+    bottom: 20px;
+}
+
+#goback-game-1:hover{
+    transform: scale(1.02);
+    background-color: #283b7c;
+    cursor: pointer;
+}
+
+
+
+
+/* Game 2 CSS */
+
+
+
+
+#game2{
+    opacity: 0;
+    pointer-events: none;
+    width: 100vw;
+    height: 103vh;
+    position: absolute;
+    bottom: -26px;
+    background: linear-gradient(110deg,#dba606,#dabc18,#e6c616,#d6a309);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game2 h1{
+    margin-top: 6vh;
+    font-size: 62px;
+}
+
+#game2 img{
+    margin-top: 10vh;
+    width: 30vw;
+}
+
+#game2 img:hover{
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
+#upgrades{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 5vw;
+    height: 420px;
+    width: 140px;
+    top: 25vh;
+}
+
+#up-one{
+    border:6px solid #223469;
+    height: 33%;
+    background-color:#dba606;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#up-one h4{
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+    margin: 0px;
+    position: relative;
+    bottom: -15px;
+    margin-bottom: 0px;
+}
+
+#up-one h5{
+    color: #9e341c;
+    font-size: 15px;
+    position: relative;
+    top: 6px;
+}
+
+#up-one:hover{
+    cursor: pointer;
+    border: 6px solid #2a57e0;
+}
+
+#up-two{
+    border: 6px solid #9e341c ;
+    height: 33%;
+    border-radius: 13px;
+    background-color:#dba606;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#up-two h4{
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+    margin: 0px;
+    position: relative;
+    bottom: -15px;
+    margin-bottom: 0px;
+}
+
+#up-two h5{
+    color: #9e341c;
+    font-size: 15px;
+    position: relative;
+    top: 6px;
+}
+
+#up-two:hover{
+    cursor: pointer;
+    border:6px solid #e93b14 ;
+}
+
+#up-three{
+    border:6px solid #581845 ;
+    height: 33%;
+    border-radius: 13px;
+    background-color:#cf9e08;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#up-three:hover{
+    cursor: pointer;
+    border: 6px solid #e624ab ;
+}
+
+#up-three h4{
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+    margin: 0px;
+    position: relative;
+    bottom: -15px;
+    margin-bottom: 0px;
+}
+
+#up-three h5{
+    color: #9e341c;
+    font-size: 15px;
+    position: relative;
+    top: 6px;
+}
+
+#score2{
+    position: absolute;
+    bottom: 5vh;
+    width: 80vw;
+    height: 16vh;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #283b7c;
+    border: 2px solid #1b1f30;
+}
+
+#score2 h2{
+    position: relative;
+    left: 5%;
+    color: white;
+    font-size: 52px;
+    text-shadow: 2px 7px 5px #1b1f30, 
+    0px -4px 10px #1b1f30;
+}
+
+#score2 p{
+    position: relative;
+    left: 7%;
+    color: white;
+    font-size: 52px;
+    text-shadow: 2px 7px 5px #1b1f30, 
+    0px -4px 10px #1b1f30;
+}
+
+#banana-img{
+    position: relative;
+}
+
+#game2 button{
+    position: absolute;
+    text-shadow: 2px 7px 5px #1b1f30, 
+    0px -4px 10px #1b1f30;
+    font-size: 40px;
+    color: white;
+    font-family: 'Bloomer DEMO', sans-serif;
+    background-color: #283b7c;
+    font-weight: bolder;
+    left: 5vw;
+    top: 37vh;
+    width: 10vw;
+    height: 26vh;
+    border: 2px solid #1b1f30;
+    border-radius: 12px;
+}
+
+#game2 button:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    
+}
+
+
+/* GAME 3 CSS */
+
+
+
+#game3{
+    opacity: 0;
+    pointer-events: none;
+    background: linear-gradient(110deg,#864229,#c57513,#b3670b,#b45431);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game3 h1{
+    color: white;
+    font-size: 58px;
+    margin-bottom: 15px;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+#leave-game3{
+    position: absolute;
+    bottom: 5vh;
+    border: 3px solid #141d36;
+    border-radius: 12px;
+    width: 40vw;
+    height: 8vh;
+    background-color: #2646ad;
+    color: white;
+    font-size: 52px;
+    font-weight: bolder;
+}
+
+#leave-game3:hover{
+    transform: scale(1.015);
+    cursor: pointer;
+    background-color: #3054cc;
+}
+
+#score3{
+    position: absolute;
+    bottom: 20vh;
+    width: 50vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:#516df5;
+    border-radius: 14px;
+    border: 3px solid #141d36;
+}
+
+#score3 h2{
+    font-size: 46px;
+    color: white;
+    position: relative;
+    left: 5%;
+}
+
+#row1{
+    display: flex;
+    flex-direction: row;
+}
+
+#row2{
+    display: flex;
+    flex-direction: row;
+}
+
+.redbutton{
+    border-radius: 50%;
+    background-color: white;
+    width: 180px;
+    height: 180px;
+    margin: 15px;
+    border: 15px solid black;
+}
+
+#score3 p{
+    font-size: 46px;
+    color: white;
+    position: relative;
+    left: 8%;
+}
+
+@keyframes smool-bik {
+    0%{transform: scale(0.5);}
+    100%{transform: scale(1);}
+}
+
+
+/* GAME 4 CSS */
+
+#game4{
+    opacity: 0;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(110deg,#FF69B4,#C71585,#C71585,#FF69B4);
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game4 h1{
+    color: white;
+    font-size: 58px;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+#game4 button{
+    background-color: #c2397e;
+    border-radius: 14px;
+    border: 5px solid #6e0a4a;
+    width: 30vw;
+    height: 12vh;
+    position: absolute;
+    bottom: 5vh;
+    color: white;
+    font-size: 52px;
+    font-weight: bolder;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+#game4 button:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    background-color: #d13c86;
+}
+
+#game4 h2{
+    font-size: 32px;
+    margin: 0px;
+}
+
+#answers-row-1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+#answers-row-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.ans{
+    width: 28vw;
+    height: 15vh;
+    background-color: white;
+    margin: 14px;
+    border-radius: 14px;
+    border: 5px solid #141d36;
+    background-color: #455da7;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.ans:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+    background-color: #6181e4;;
+}
+
+
+#results{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 62px;
+}
+
+#false{
+    width: 20vw;
+    height: 10vh;
+    border: 4px solid red;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.438);
+    margin: 10px;
+}
+
+#correct{
+    width: 20vw;
+    height: 10vh;
+    border: 4px solid limegreen;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(2, 255, 2, 0.582);
+    margin: 10px;
+}
+
+/* GAME 5 CSS */
+
+
+
+
+#game5{
+    opacity: 0;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(110deg,	lightseagreen,darkcyan,darkcyan,	lightseagreen);
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#goback-game-5{
+    position: absolute;
+    right: 20vw;
+    width: 24vw;
+    bottom: 3vh;
+    height: 12vh;
+    border-radius: 12px;
+    border: 4px solid rgb(32, 187, 179);
+    background-color: rgb(17, 110, 110);
+    color: white;
+    font-size: 38px;
+    font-weight: bolder;
+}
+
+#goback-game-5:hover{
+    background-color: rgb(31, 126, 121);
+    cursor: pointer;
+    transform: scale(1.01);
+    overflow-y: hidden;
+}
+
+#row1-game5{
+    display: flex;
+    flex-direction: row;
+}
+
+#row1-game5 div{
+    background-color: transparent;
+    margin: 10px;
+    width: 170px;
+    height: 170px;
+    position: relative;
+    bottom: 6vh;
+    color: white;
+    font-size: 142px;
+    text-align: center;
+}
+
+#row1-game5 div:hover{
+    cursor: pointer;
+}
+
+#vertical{
+    background-color: black;
+    width: 3vw;
+    height: 60vh;
+    position: absolute;
+    animation: height-larger 1s forwards;
+}
+
+.vert1{
+    position: absolute;
+    left: 38vw;
+    top: 14vh;
+}
+
+.vert2{
+    position: absolute;
+    left: 59vw;
+    top: 14vh;
+}
+
+#Horizontal1{
+    background-color: black;
+    width: 3vw;
+    height: 60vh;
+    position: absolute;
+    rotate: 90deg;
+    position: absolute;
+    top: 30px;
+    right: 48.3vw;
+    animation: height-larger 1s forwards;
+}
+
+#Horizontal2{
+    background-color: black;
+    width: 3vw;
+    height: 60vh;
+    position: absolute;
+    rotate: 90deg;
+    position: absolute;
+    top: 227px;
+    right: 48.3vw;
+    animation: height-larger 1s forwards;
+}
+
+@keyframes height-larger {
+    0%{height: 25vh;}
+    100%{height: 60vh;}
+}
+
+
+
+#reset-btn{
+    position: absolute;
+    bottom: 3vh;
+    left: 20vw;
+    width: 24vw;
+    height: 12vh;
+    border-radius: 12px;
+    border: 4px solid lightseagreen;
+    background-color: rgb(17, 110, 110);
+    font-size: 38px;
+    color: white;
+    font-weight: bolder;
+}
+
+#reset-btn:hover{
+    background-color: rgb(31, 126, 121);
+    cursor: pointer;
+    transform: scale(1.01);
+    overflow-y: hidden;
+}
+
+/* GAME 6 CSS */
+
+#game6{
+    opacity: 0;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(110deg,	rgb(51, 138, 51),rgb(41, 151, 41),rgb(45, 153, 45),	rgb(51, 126, 51));
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.butonz{
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(110deg,	rgb(9, 66, 66),darkcyan,darkcyan,	lightseagreen);
+    border: 2px solid black;
+    margin: 3px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    box-shadow: rgb(18, 119, 114) 0px 0px 15px 0px;
+    border-radius: 12px;
+}
+
+.butonz:hover{
+    transform: scale(1.005);
+    cursor: pointer;
+    background: linear-gradient(110deg,	rgb(11, 82, 82),rgb(1, 151, 151),rgb(1, 167, 167),rgb(34, 190, 183));
+}
+
+#buttons-row1{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 25vh;
+}
+
+#buttons-row2{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 18vh;
+}
+
+#underword{
+    font-size: 158px;
+    margin: 0px;
+    position: absolute;
+    top: 14vh;
+    display: flex;
+    letter-spacing: 54px;
+}
+
+
+#goback-6{
+    position: absolute;
+    bottom: 5vh;
+    width: 20vw;
+    height: 8vh;
+    background: linear-gradient(110deg,	rgb(9, 66, 66),darkcyan,darkcyan,	lightseagreen);
+    color: white;
+    font-size: 32px;
+    border: 2px solid black;
+    box-shadow: rgb(18, 119, 114) 0px 0px 15px 0px;
+    border-radius: 8px;
+    font-weight: bolder;
+    left: 25vw;
+}
+
+#goback-6:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+    background: linear-gradient(110deg,	rgb(12, 83, 83),rgb(1, 160, 160),rgb(1, 160, 160),	rgb(32, 185, 178));
+
+}
+
+.letters{
+    position: relative;
+    top: 16vh;
+    left: 24px;
+}
+
+.letters h4{
+    margin: 0px;
+    position: absolute;
+    top: -3vh;
+}
+
+.letters p{
+    margin: 0px;
+    
+}
+
+#changeword{
+    position: absolute;
+    bottom: 5vh;
+    right: 25vw;
+    width: 20vw;
+    height: 8vh;
+    background: linear-gradient(110deg,	rgb(9, 66, 66),darkcyan,darkcyan,	lightseagreen);
+    color: white;
+    font-size: 30px;
+    border: 2px solid black;
+    box-shadow: rgb(18, 119, 114) 0px 0px 15px 0px;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+#changeword:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+    background: linear-gradient(110deg,	rgb(12, 83, 83),rgb(1, 160, 160),rgb(1, 160, 160),	rgb(32, 185, 178));
+
+}
+
+#letter1-1{
+    opacity: 0;
+}
+
+#letter2-1{
+    opacity: 0;
+}
+
+#letter3-1{
+    opacity: 0;
+}
+
+#letter4-1{
+    opacity: 0;
+}
+
+#scorez{
+    display: flex;
+    flex-direction: row;
+    width: 45vw;
+    height: 10vh;
+    background-color: white;
+    border-radius: 14px;
+    font-size: 66px;
+    position: absolute;
+    top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 205, 50, 0.459) 0px 5px 15px;
+    box-shadow: rgba(3, 243, 3, 0.459) 0px 50px 100px -20px, rgba(50, 205, 50, 0.459) 0px 30px 60px -30px, rgba(50, 205, 50, 0.459) 0px -2px 6px 0px inset;
+}
+
+@keyframes fadeIN {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+/* GAME 7 CSS */
+
+#game7{
+    opacity: 0;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(110deg,	#83342f,#AA4A44,#AA4A44,	#c5564e);
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.memory-slot{
+    background-color: white;
+    width: 135px;
+    height: 135px;
+    border: 4px solid black;
+    margin: 7px;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: black;
+    font-size: 48px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.memory-slot p{
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.memory-slot:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+    background-color: rgb(235, 235, 235);
+}
+
+#row1-d{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 60px;
+}
+
+#replay-7{
+    width: 23vw;
+    height: 10vh;
+    border-radius: 14px;
+    border: 4px solid red;
+    background-color: rgba(255, 0, 0, 0.295);
+    color: white;
+    font-size: 38px;
+    font-weight: bolder;
+    position: absolute;
+    right: 25vw;
+    bottom: 5vh;
+    box-shadow: rgba(255, 0, 0, 0.589) 1px 1px 8px;
+}
+
+#hammer{
+    border-radius: 12px;
+    position: absolute;
+    left: 10px;
+    top: 35px;
+    border: 3px solid white;
+}
+
+#replay-7:hover{
+    transform: scale(1.015);
+    cursor: pointer;
+    background-color: rgba(230, 1, 1, 0.295);
+    border: 4px solid rgb(236, 0, 0);border: 4px solid red;
+}
+
+#goback-7:hover{
+    transform: scale(1.015);
+    cursor: pointer;
+    background-color: rgba(230, 1, 1, 0.295);
+    border: 4px solid rgb(240, 0, 0);
+}
+
+#goback-7{
+    width: 23vw;
+    height: 10vh;
+    border-radius: 14px;
+    border: 4px solid red;
+    background-color: rgba(255, 0, 0, 0.295);
+    color: white;
+    font-size: 36px;
+    font-weight: bolder;
+    position: absolute;
+    left: 25vw;
+    bottom: 5vh;
+    box-shadow: rgba(255, 0, 0, 0.589) 1px 1px 8px;
+}
+
+.op_0{
+    opacity: 0.2;
+}
+
+@keyframes go_out {
+    0%{opacity: 0.98;}
+    100%{opacity: 0.2;}
+}
+
+/* GAME 8 */
+
+#game8{
+    opacity: 0;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    background: linear-gradient( 110deg,black , rgb(80, 80, 80)	);
+
+}
+
+#game8:hover{
+    cursor: pointer;
+}
+
+#leave-game8{
+    width: 200px;
+    height: 80px;
+    border-radius: 14px;
+    border: 0px solid #026363;
+    background-color: #048b8b;
+    position: absolute;
+    bottom: 5vh;
+    left: 40vw;
+    color: white;
+    font-size: 34px;
+    font-weight: bolder;
+    z-index: 3;
+}
+
+#opaa{
+    position: absolute;
+    top: 45vh;
+    left: 100px;
+    z-index: 3;
+}
+
+#leave-game8:hover{
+    transform: scale(1.01);
+    background-color: #059696;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+#colorz1{
+    
+    position: absolute;
+    width: 40vw;
+    height: 40vh;
+    top:0px;
+    border-radius: 52%;
+}
+
+#colorz1:hover{
+    transform: scale(1.035);
+}
+
+#colorz2:hover{
+    transform: scale(1.035);
+}
+
+#colorz2{
+    
+    position: absolute;
+    width: 40vw;
+    height: 40vh;
+    top:0px;
+    border-radius: 52%;
+}
+
+@keyframes smoll-bikker {
+    0%{width: 10px;}
+    100%{width: 40vw;}
+    0%{height: 10px;}
+    100%{height: 40vh;}
+}
+
+
+/* GAME 9 CSS */
+
+
+
+#game9{
+    opacity: 0;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    background: linear-gradient(110deg,	#023020,#097969,#097969,#023020);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#leave-game9{
+    width: 200px;
+    height: 80px;
+    border-radius: 14px;
+    border: 4px solid #023020;
+    background-color: #095f52;
+    position: absolute;
+    bottom: 5vh;
+    
+    color: white;
+    font-size: 34px;
+    font-weight: bolder;
+}
+
+#leave-game9:hover{
+    transform: scale(1.01);
+    background-color: #09695b;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+#game9-h1{
+    color: white;
+    font-size: 58px;
+    margin: 0px;
+    position: absolute;
+    top: 30px;
+}
+
+#game9 h2{
+    color: black;
+    font-size: 78px;
+    margin: 0px;
+    position: absolute;
+    top: 180px;
+}
+
+#ans-num{
+    position: absolute;
+    top: 380px;
+    width: 450px;
+    height: 150px;
+    border-radius: 14px;
+    border: none;
+    background: linear-gradient(135deg , rgba(248, 248, 248 ,0.005) ,rgba(211, 211, 211,0.005));
+    color: white;
+    font-size: 122px;   
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    outline: none;
+}
+
+#timer{
+    border-radius: 20px;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    width: 180px;
+    height: 50px;
+    background-color: white;
+}
+
+#timer-inner{
+    border-radius: 18px;
+    position: inherit;
+    left: 6px;
+    top: 5px;
+    width: 168px;
+    height: 40px;
+    background-color: red;
+    
+}
+
+@keyframes timerout {
+    0%{width: 168px}
+    100%{width: 18px}
+    0%{border-radius: 18px;}
+    100%{border-radius: 50px;}
+    0%{width: 94%;}
+    100%{width: 12%;}
+}  
+
+#score-game9{
+    position: absolute;
+    bottom: 180px;
+    width: 250px;
+    height: 120px;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgba(255, 255, 255, 0.425);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 102px;
+}
